@@ -123,7 +123,7 @@ export default defineConfig((configEnv) => {
                     //     }
                     //     return id
                     // },
-                    chunkFileNames: 'chunks/[name].[hash].js',
+                    chunkFileNames: 'chunkz/[name].[hash].js',
                     entryFileNames: '[name]/[name].js',
                 },
 
