@@ -114,7 +114,16 @@ export default defineConfig((configEnv) => {
                     // assetFileNames: () => {
                     //     return '[name]/[name][extname]';
                     // },
-                    chunkFileNames: '__chunks__/[name].js',
+                    // manualChunks(id) {
+                    //     // Match the directory structure of the entry points
+                    //     console.log('chuck>>> ',id)
+                    //     const match = id.match(/src\/blocks\/(.+?)\//);
+                    //     if (match) {
+                    //         return `${match[1]}`; // Group by subfolder under /src/blocks
+                    //     }
+                    //     return id
+                    // },
+                    chunkFileNames: '[name].[hash].js',
                     entryFileNames: '[name]/[name].js',
                 },
 
