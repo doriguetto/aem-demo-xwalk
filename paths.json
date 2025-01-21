@@ -2,7 +2,8 @@
   "mappings": [
     "/content/aem-demo-xwalk/:/",
     "/content/aem-demo-xwalk/configuration:/.helix/config.json",
-    "/content/aem-demo-xwalk/metadata:/metadata.json"
+    "/content/aem-demo-xwalk/metadata:/metadata.json",
+    "/blocks/chunks:/blocks/chunks/"
   ],
   "includes": [
     "/content/aem-demo-xwalk/"
