@@ -3,7 +3,7 @@
     "/content/aem-demo-xwalk/:/",
     "/content/aem-demo-xwalk/configuration:/.helix/config.json",
     "/content/aem-demo-xwalk/metadata:/metadata.json",
-    "/blocks/chunks:/blocks/chunks/"
+    "/blocks/chunks:/content/aem-demo-xwalk.resource/blocks/chunks/"
   ],
   "includes": [
     "/content/aem-demo-xwalk/"
