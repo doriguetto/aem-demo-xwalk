@@ -1,0 +1,865 @@
+.bg-nab-red {
+  background-color: #c20000
+}
+
+.bg-nab-emerald {
+  background-color: #2c853c
+}
+
+.bg-nab-slate {
+  background-color: #3a4f59
+}
+
+.bg-nab-amber {
+  background-color: #e9600e
+}
+
+.bg-nab-sapphire {
+  background-color: #1e5aa3
+}
+
+.bg-nab-white {
+  background-color: #fff
+}
+
+.bg-nab-background {
+  background-color: #f5f5f5
+}
+
+.bg-nab-grey90 {
+  background-color: #e6e6e6
+}
+
+.bg-nab-grey70 {
+  background-color: #b3b3b3
+}
+
+.bg-nab-grey50 {
+  background-color: grey
+}
+
+.bg-nab-grey30 {
+  background-color: #4d4d4d
+}
+
+.bg-nab-grey10 {
+  background-color: #1a1a1a
+}
+
+.bg-nab-black {
+  background-color: #000
+}
+
+.bg-nab-red-hover {
+  background-color: #8f0000
+}
+
+.bg-nab-emerald-hover {
+  background-color: #1f5f2b
+}
+
+.bg-nab-slate-hover {
+  background-color: #26343a
+}
+
+.bg-nab-red-selected {
+  background-color: #750000
+}
+
+.bg-nab-emerald-selected {
+  background-color: #194d23
+}
+
+.bg-nab-slate-selected {
+  background-color: #1c262b
+}
+
+@keyframes nab-fade-in {
+  0% {
+    visibility: hidden;
+    opacity: 0
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1
+  }
+}
+
+@keyframes nab-spin {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(1turn)
+  }
+}
+
+@keyframes expand {
+  0% {
+    width: 0;
+    visibility: hidden
+  }
+
+  to {
+    width: 100%;
+    visibility: visible
+  }
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth
+}
+
+*,:after,:before {
+  box-sizing: inherit
+}
+
+button,select {
+  color: inherit
+}
+
+body {
+  margin: 0;
+  overscroll-behavior: none;
+  background-color: #f5f5f5
+}
+
+svg {
+  fill: currentColor
+}
+
+button {
+  padding: 0;
+  border: none
+}
+
+.ls-none {
+  list-style: none
+}
+
+.sr-only {
+  position: absolute!important;
+  width: 1px!important;
+  height: 1px!important;
+  margin: -1px!important;
+  padding: 0!important;
+  overflow: hidden!important;
+  white-space: nowrap!important;
+  border: 0!important;
+  clip: rect(0,0,0,0)!important
+}
+
+.hidden {
+  display: none!important;
+  visibility: hidden!important
+}
+
+@media(min-width: 768px) {
+  .visible-xs {
+    display:none!important;
+    visibility: hidden!important
+  }
+}
+
+@media(max-width: 767px) {
+  .hidden-xs {
+    display:none!important;
+    visibility: hidden!important
+  }
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+  -webkit-appearance: none
+}
+
+.h3,.h4,.h5,.h6,h3,h4,h5,h6 {
+  margin: 32px 0 16px
+}
+
+.h2,h2 {
+  margin: 40px 0 24px
+}
+
+.h2+.h3,.h2+.h4,.h2+.h5,.h2+.h6,.h2+h3,.h2+h4,.h2+h5,.h2+h6,h2+.h3,h2+.h4,h2+.h5,h2+.h6,h2+h3,h2+h4,h2+h5,h2+h6 {
+  margin-top: 24px
+}
+
+.h3+.h4,.h3+.h5,.h3+.h6,.h3+h4,.h3+h5,.h3+h6,.h4+.h5,.h4+.h6,.h4+h5,.h4+h6,h3+.h4,h3+.h5,h3+.h6,h3+h4,h3+h5,h3+h6,h4+.h5,h4+.h6,h4+h5,h4+h6 {
+  margin-top: 16px
+}
+
+ol,p,ul {
+  margin: 0 0 16px
+}
+
+ol,ul {
+  padding-left: 24px
+}
+
+ol ol,ol ul,ul ol,ul ul {
+  padding-left: 32px
+}
+
+li {
+  margin: 0 0 8px
+}
+
+.nab-text>:first-child {
+  margin-top: 0
+}
+
+.nab-text>:last-child,.nab-text>ol li:last-child,.nab-text>ol li:last-child ol,.nab-text>ol li:last-child ul:last-child,.nab-text ul:last-child li:last-child,.nab-text ul:last-child li:last-child ol,.nab-text ul:last-child li:last-child ul:last-child {
+  margin-bottom: 0
+}
+
+.fw-light {
+  font-weight: 300
+}
+
+.fw-normal {
+  font-weight: 400
+}
+
+.fw-semi-bold {
+  font-weight: 600
+}
+
+.fw-bold {
+  font-weight: 700
+}
+
+html {
+  font-size: 16px
+}
+
+.auto-text-colour,.h1,.h2,.h3,.h4,.h5,.h6,.impact-text,.paragraph-text,.subtitle-text,.title-text,body,h1,h2,h3,h4,h5,h6,p {
+  color: #000
+}
+
+.auto-text-colour .dark-background,.dark-background .auto-text-colour,.dark-background .h1,.dark-background .h2,.dark-background .h3,.dark-background .h4,.dark-background .h5,.dark-background .h6,.dark-background .impact-text,.dark-background .paragraph-text,.dark-background .subtitle-text,.dark-background .title-text,.dark-background body,.dark-background h1,.dark-background h2,.dark-background h3,.dark-background h4,.dark-background h5,.dark-background h6,.dark-background p,.h1 .dark-background,.h2 .dark-background,.h3 .dark-background,.h4 .dark-background,.h5 .dark-background,.h6 .dark-background,.impact-text .dark-background,.paragraph-text .dark-background,.subtitle-text .dark-background,.title-text .dark-background,body .dark-background,h1 .dark-background,h2 .dark-background,h3 .dark-background,h4 .dark-background,h5 .dark-background,h6 .dark-background,p .dark-background {
+  color: #fff
+}
+
+.auto-text-colour .light-background,.h1 .light-background,.h2 .light-background,.h3 .light-background,.h4 .light-background,.h5 .light-background,.h6 .light-background,.impact-text .light-background,.light-background .auto-text-colour,.light-background .h1,.light-background .h2,.light-background .h3,.light-background .h4,.light-background .h5,.light-background .h6,.light-background .impact-text,.light-background .paragraph-text,.light-background .subtitle-text,.light-background .title-text,.light-background body,.light-background h1,.light-background h2,.light-background h3,.light-background h4,.light-background h5,.light-background h6,.light-background p,.paragraph-text .light-background,.subtitle-text .light-background,.title-text .light-background,body .light-background,h1 .light-background,h2 .light-background,h3 .light-background,h4 .light-background,h5 .light-background,h6 .light-background,p .light-background {
+  color: #000
+}
+
+.auto-text-colour.light-text,.auto-text-colour>.light-text,.h1>.light-text,.h2>.light-text,.h3>.light-text,.h4>.light-text,.h5>.light-text,.h6>.light-text,.impact-text>.light-text,.light-text .auto-text-colour,.light-text.h1,.light-text .h1,.light-text.h2,.light-text .h2,.light-text.h3,.light-text .h3,.light-text.h4,.light-text .h4,.light-text.h5,.light-text .h5,.light-text.h6,.light-text .h6,.light-text.impact-text,.light-text .impact-text,.light-text.paragraph-text,.light-text .paragraph-text,.light-text.subtitle-text,.light-text .subtitle-text,.light-text.title-text,.light-text .title-text,.light-text body,.light-text h1,.light-text h2,.light-text h3,.light-text h4,.light-text h5,.light-text h6,.light-text p,.paragraph-text>.light-text,.subtitle-text>.light-text,.title-text>.light-text,body.light-text,body>.light-text,h1.light-text,h1>.light-text,h2.light-text,h2>.light-text,h3.light-text,h3>.light-text,h4.light-text,h4>.light-text,h5.light-text,h5>.light-text,h6.light-text,h6>.light-text,p.light-text,p>.light-text {
+  color: #fff
+}
+
+.auto-text-colour.dark-text,.auto-text-colour>.dark-text,.dark-text .auto-text-colour,.dark-text.h1,.dark-text .h1,.dark-text.h2,.dark-text .h2,.dark-text.h3,.dark-text .h3,.dark-text.h4,.dark-text .h4,.dark-text.h5,.dark-text .h5,.dark-text.h6,.dark-text .h6,.dark-text.impact-text,.dark-text .impact-text,.dark-text.paragraph-text,.dark-text .paragraph-text,.dark-text.subtitle-text,.dark-text .subtitle-text,.dark-text.title-text,.dark-text .title-text,.dark-text body,.dark-text h1,.dark-text h2,.dark-text h3,.dark-text h4,.dark-text h5,.dark-text h6,.dark-text p,.h1>.dark-text,.h2>.dark-text,.h3>.dark-text,.h4>.dark-text,.h5>.dark-text,.h6>.dark-text,.impact-text>.dark-text,.paragraph-text>.dark-text,.subtitle-text>.dark-text,.title-text>.dark-text,body.dark-text,body>.dark-text,h1.dark-text,h1>.dark-text,h2.dark-text,h2>.dark-text,h3.dark-text,h3>.dark-text,h4.dark-text,h4>.dark-text,h5.dark-text,h5>.dark-text,h6.dark-text,h6>.dark-text,p.dark-text,p>.dark-text {
+  color: #000
+}
+
+.caption-text,.disclaimer-text,caption,figcaption {
+  font-weight: 400;
+  font-family: source-sans-pro,helvetica,-apple-system,blinkmacsystemfont,Segoe UI,roboto,oxygen-sans,ubuntu,cantarell,Helvetica Neue,sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: #4d4d4d
+}
+
+.caption-text .dark-background,.dark-background .caption-text,.dark-background .disclaimer-text,.dark-background caption,.dark-background figcaption,.disclaimer-text .dark-background,caption .dark-background,figcaption .dark-background {
+  color: #b3b3b3
+}
+
+.caption-text .light-background,.disclaimer-text .light-background,.light-background .caption-text,.light-background .disclaimer-text,.light-background caption,.light-background figcaption,caption .light-background,figcaption .light-background {
+  color: #4d4d4d
+}
+
+.caption-text.light-text,.caption-text>.light-text,.disclaimer-text.light-text,.disclaimer-text>.light-text,.light-text .caption-text,.light-text .disclaimer-text,.light-text caption,.light-text figcaption,caption.light-text,caption>.light-text,figcaption.light-text,figcaption>.light-text {
+  color: #b3b3b3
+}
+
+.caption-text.dark-text,.caption-text>.dark-text,.dark-text .caption-text,.dark-text .disclaimer-text,.dark-text caption,.dark-text figcaption,.disclaimer-text.dark-text,.disclaimer-text>.dark-text,caption.dark-text,caption>.dark-text,figcaption.dark-text,figcaption>.dark-text {
+  color: #4d4d4d
+}
+
+.paragraph-text,body,p {
+  font-weight: 400;
+  font-family: source-sans-pro,helvetica,-apple-system,blinkmacsystemfont,Segoe UI,roboto,oxygen-sans,ubuntu,cantarell,Helvetica Neue,sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+  font-size: 1rem;
+  line-height: 1.5rem
+}
+
+.paragraph-text sub,.paragraph-text sup,body sub,body sup,p sub,p sup {
+  font-size: .875rem;
+  line-height: 1.25rem
+}
+
+.overline-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-family: source-sans-pro,helvetica,-apple-system,blinkmacsystemfont,Segoe UI,roboto,oxygen-sans,ubuntu,cantarell,Helvetica Neue,sans-serif;
+  line-height: 1;
+  letter-spacing: .125em;
+  text-transform: uppercase;
+  color: #3a4f59
+}
+
+.dark-background .overline-text,.overline-text .dark-background {
+  color: #b3b3b3
+}
+
+.light-background .overline-text,.overline-text .light-background {
+  color: #3a4f59
+}
+
+.light-text .overline-text,.overline-text.light-text,.overline-text>.light-text {
+  color: #b3b3b3
+}
+
+.dark-text .overline-text,.overline-text.dark-text,.overline-text>.dark-text {
+  color: #3a4f59
+}
+
+.h3,.h4,.h5,.h6,.subtitle-text,h3,h4,h5,h6 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-family: source-sans-pro,helvetica,-apple-system,blinkmacsystemfont,Segoe UI,roboto,oxygen-sans,ubuntu,cantarell,Helvetica Neue,sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+  font-weight: 700
+}
+
+.accent-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: NAB Digital Script,-apple-system,blinkmacsystemfont,Segoe UI,roboto,oxygen-sans,ubuntu,cantarell,Helvetica Neue,sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #c20000
+}
+
+.accent-text .dark-background,.dark-background .accent-text {
+  color: #fff
+}
+
+.accent-text .light-background,.light-background .accent-text {
+  color: #c20000
+}
+
+.accent-text.light-text,.accent-text>.light-text,.light-text .accent-text {
+  color: #fff
+}
+
+.accent-text.dark-text,.accent-text>.dark-text,.dark-text .accent-text {
+  color: #c20000
+}
+
+.h1,.h2,.title-text,h1,h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  font-family: source-sans-pro,helvetica,-apple-system,blinkmacsystemfont,Segoe UI,roboto,oxygen-sans,ubuntu,cantarell,Helvetica Neue,sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+  font-weight: 300
+}
+
+.impact-text {
+  font-size: 2rem;
+  line-height: 2.5rem
+}
+
+.impact-text,.marketing-text {
+  font-family: NAB Impact,-apple-system,blinkmacsystemfont,Segoe UI,roboto,oxygen-sans,ubuntu,cantarell,Helvetica Neue,sans-serif;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: uppercase
+}
+
+.marketing-text {
+  font-size: 4rem
+}
+
+em,strong {
+  font-weight: 700;
+  font-style: normal
+}
+
+sup {
+  font-weight: 400;
+  font-family: source-sans-pro,helvetica,-apple-system,blinkmacsystemfont,Segoe UI,roboto,oxygen-sans,ubuntu,cantarell,Helvetica Neue,sans-serif;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  vertical-align: baseline
+}
+
+sup>a {
+  margin: -3px -3px -3px 0;
+  padding: 3px
+}
+
+hr {
+  margin: 40px 0;
+  border: solid grey;
+  border-width: thin 0 0
+}
+
+a {
+  color: #c20000;
+  text-decoration: underline
+}
+
+.dark-background a,a .dark-background {
+  color: #fff
+}
+
+.light-background a,a .light-background {
+  color: #c20000
+}
+
+.light-text a,a.light-text,a>.light-text {
+  color: #fff
+}
+
+.dark-text a,a.dark-text,a>.dark-text {
+  color: #c20000
+}
+
+a:active {
+  box-shadow: 0 0 0 3px rgba(0,0,0,.65)
+}
+
+a:active,a:focus {
+  border-radius: 4px
+}
+
+a:focus {
+  outline: 3px solid transparent;
+  box-shadow: 0 0 0 3px rgba(194,0,0,.65)
+}
+
+a:active,a:hover {
+  color: #000;
+  text-decoration: none
+}
+
+.dark-background a:active,.dark-background a:hover,a:active .dark-background,a:hover .dark-background {
+  color: #fff
+}
+
+.light-background a:active,.light-background a:hover,a:active .light-background,a:hover .light-background {
+  color: #000
+}
+
+.light-text a:active,.light-text a:hover,a:active.light-text,a:active>.light-text,a:hover.light-text,a:hover>.light-text {
+  color: #fff
+}
+
+.dark-text a:active,.dark-text a:hover,a:active.dark-text,a:active>.dark-text,a:hover.dark-text,a:hover>.dark-text {
+  color: #000
+}
+
+.h1,h1 {
+  line-height: 1
+}
+
+@media(min-width: 992px) {
+  .h1,h1 {
+    font-size:2.5rem
+  }
+}
+
+@media(min-width: 1328px) {
+  .h1,h1 {
+    font-size:3rem
+  }
+}
+
+h1.impact-text {
+  font-size: 3rem;
+  line-height: 3.375rem
+}
+
+.h3,h3 {
+  font-size: 1.5rem;
+  line-height: 2rem
+}
+
+.h4,h4 {
+  font-size: 1.25rem;
+  line-height: 1.5rem
+}
+
+.h4,.h5,.h6,h4,h5,h6 {
+  font-weight: 600
+}
+
+.h1 sup,.h2 sup,.h3 sup,.h4 sup,.h5 sup,.h6 sup,h1 sup,h2 sup,h3 sup,h4 sup,h5 sup,h6 sup {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  vertical-align: top
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+@media (min-width: 1328px) {
+  .cmp-title--h1-appearance .cmp-title__heading h2 {
+    font-size: 3rem;
+    line-height: 3.375rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 18px 0;
+  }
+}

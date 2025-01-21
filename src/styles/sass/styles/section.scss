@@ -1,0 +1,254 @@
+.nab-accordion--flex-column .nab-accordion,.nab-accordion--link-list .nab-accordion {
+  margin: 24px auto;
+  padding: 0
+}
+
+@media(min-width: 992px) {
+  .nab-accordion--flex-column .nab-accordion,.nab-accordion--link-list .nab-accordion {
+    margin:0;
+    padding: 0
+  }
+
+  #supports.js .nab-accordion--flex-column .nab-accordion--no-touch .nab-accordion__button,#supports.js .nab-accordion--link-list .nab-accordion--no-touch .nab-accordion__button {
+    pointer-events: none
+  }
+
+  .nab-accordion--flex-column .nab-accordion__panel,.nab-accordion--link-list .nab-accordion__panel {
+    margin: 0;
+    padding: 0
+  }
+
+  .nab-accordion--flex-column .nab-accordion__button,.nab-accordion--link-list .nab-accordion__button {
+    padding: 16px 0
+  }
+
+  .nab-accordion--flex-column .nab-accordion__item,.nab-accordion--link-list .nab-accordion__item {
+    padding: 0 8px;
+    border: none
+  }
+
+  .nab-accordion--flex-column .nab-accordion__item:first-child,.nab-accordion--link-list .nab-accordion__item:first-child {
+    padding-left: 0
+  }
+
+  .nab-accordion--flex-column .nab-accordion__item:last-child,.nab-accordion--link-list .nab-accordion__item:last-child {
+    padding-right: 0
+  }
+
+  .cmp-title__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+
+  .section-container.section-container__notched {
+    padding-top: 0
+  }
+
+  @media(min-width: 1328px) {
+    .section-container.section-container__notched {
+      position:relative;
+      top: -40px;
+      max-width: 1248px;
+      margin: 0 auto;
+      border-radius: 8px
+    }
+
+    .section-container.section-container__notched.aem-GridColumn {
+      float: none;
+      clear: both
+    }
+  }
+
+  .cmp-title__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0
+  }
+
+  @media(max-width: 991px) {
+    .cmp-title__text {
+      padding-bottom:0
+    }
+  }
+
+  .feature-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 40px
+  }
+
+  @media(max-width: 767px) {
+    .feature-content {
+      padding:24px
+    }
+  }
+
+  @media(min-width: 768px)and (max-width:991px) {
+    .feature-content {
+      padding:32px
+    }
+  }
+
+  @media(min-width: 992px)and (max-width:1327px) {
+    .feature-content {
+      padding:32px
+    }
+  }
+
+
+  .nab-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    margin: 0;
+    padding: 0 4px;
+    vertical-align: top;
+    border: 2px solid;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-family: source-sans-pro,helvetica,-apple-system,blinkmacsystemfont,Segoe UI,roboto,oxygen-sans,ubuntu,cantarell,Helvetica Neue,sans-serif;
+    line-height: 1;
+    letter-spacing: .125em;
+    text-transform: uppercase
+  }
+
+  .nab-badge .nab-badge__text {
+    margin: 0;
+    color: inherit;
+    white-space: nowrap
+  }
+
+  .nab-badge .nab-badge__icon {
+    width: 1em;
+    height: 1em;
+    margin: 0 4px 0 0
+  }
+
+  .nab-badge--icon-right .nab-badge .nab-badge__icon {
+    order: 2;
+    margin: 0 0 0 4px
+  }
+
+  .nab-badge--red .nab-badge {
+    color: #c20000
+  }
+
+  .nab-badge--slate .nab-badge {
+    color: #3a4f59
+  }
+
+  .nab-badge--emerald .nab-badge {
+    color: #2c853c
+  }
+
+
+  .nab-button-link--red .nab-button {
+    min-width: 0;
+    padding: 12px 4px;
+    color: #c20000;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0
+  }
+
+  .nab-button-link--red .nab-button span {
+    text-decoration: underline
+  }
+
+  .nab-button-link--red .nab-button:active {
+    border-radius: 4px;
+    box-shadow: 0 0 0 3px rgba(0,0,0,.65)
+  }
+
+  .nab-button-link--red .nab-button:focus {
+    border-radius: 4px;
+    outline: 3px solid transparent;
+    box-shadow: 0 0 0 3px rgba(194,0,0,.65)
+  }
+
+  .nab-button-link--red .nab-button:hover {
+    color: #000;
+    background-color: transparent;
+    border: 0
+  }
+
+  .nab-button-link--red .nab-button:hover span {
+    text-decoration: none
+  }
+
+  .nab-button-link--red .nab-button:focus {
+    color: #c20000;
+    background-color: transparent;
+    border: 0
+  }
+
+  .nab-button-link--red .nab-button:focus span {
+    text-decoration: underline
+  }
+
+  .nab-button-link--red .nab-button:active {
+    color: #000;
+    background-color: transparent;
+    border: 0
+  }
+
+  .nab-button-link--red .nab-button:active span {
+    text-decoration: none
+  }
+
+  .nab-call-to-action .nab-call-to-action__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px
+  }
+
+  .nab-call-to-action .nab-call-to-action__buttons [class*=nab-button-link]:first-child {
+    margin-left: -4px
+  }
+
+  .nab-button svg {
+    flex-shrink: 0;
+    align-self: stretch;
+    width: 24px;
+    height: 24px;
+    vertical-align: top
+  }
+
+  .nab-button__icon--left {
+    margin-right: 8px
+  }
+
+  .nab-button__icon--right {
+    margin-left: 8px
+  }
+
+
+  .nab-link-list--mobile-link .cmp-list__item:hover, .nab-link-list--text-links .cmp-list__item:hover {
+    background: #e6e6e6;
+    border-color: #000;
+
+    & svg {
+      transform: translateX(0);
+      fill: #000;
+    }
+  }
+
+  .nab-link-list--mobile-link svg,.nab-link-list--text-links svg {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 8px;
+    transform: translateX(-4px);
+    transition: transform .3s;
+    fill: #c20000;
+
+  }
+}

@@ -1,0 +1,255 @@
+.nab-tile--contact {
+  display: flex;
+  height: 100%
+}
+
+.nab-tile--contact .h3 {
+  margin-bottom: 0;
+  font-weight: 300
+}
+
+.nab-tile--contact .nab-tile__content {
+  display: grid;
+  grid-template-rows: min-content min-content 1fr;
+  width: 100%
+}
+
+.nab-tile--contact .nab-tile__content .nab-text {
+  margin: 16px 0
+}
+
+.nab-tile--contact .nab-tile__content .button {
+  align-self: end
+}
+
+.nab-tile--contact .nab-tile__content .nab-button {
+  margin-top: 0
+}
+
+.nab-tile--contact .nab-tile__icon {
+  width: 56px;
+  min-width: 56px;
+  height: 56px;
+  min-height: 56px;
+  margin-right: 24px;
+  background-color: #c20000;
+  border-radius: 50%
+}
+
+.nab-tile--contact .nab-tile__icon svg {
+  align-self: center;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  min-height: 40px;
+  fill: #fff
+}
+
+@media(min-width: 768px)and (max-width:1327px) {
+  .nab-tile--contact .nab-tile__icon {
+    width:40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    margin-right: 20px
+  }
+
+  .nab-tile--contact .nab-tile__icon>svg {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    min-height: 32px
+  }
+}
+
+.nab-tile--banner .cmp-title__heading {
+  margin: 0 0 16px
+}
+
+.nab-tile--banner .nab-tile__actions {
+  margin: 16px 0 0
+}
+
+.nab-tile--banner .nab-tile__actions .button:first-of-type .nab-button {
+  margin-right: 16px
+}
+
+.nab-tile--banner .nab-tile__actions-buttons {
+  display: flex;
+  flex-wrap: wrap
+}
+
+.nab-tile--banner .nab-tile__actions-info {
+  display: flex;
+  padding: 8px 0;
+  color: #3a4f59
+}
+
+.nab-tile--banner .nab-tile__actions-info svg {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin: 0 8px 0 0;
+  vertical-align: middle
+}
+
+.nab-tile--banner .nab-text {
+  margin-top: 24px
+}
+
+.nab-tile--benefit .nab-tile__content .nab-text {
+  margin: 16px 0
+}
+
+.nab-tile--benefit .nab-tile__content .nab-button {
+  margin-top: 0
+}
+
+.nab-tile--benefit .nab-tile__icon {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  min-height: 40px;
+  margin-right: 0;
+  margin-bottom: 24px;
+  background-color: inherit
+}
+
+.nab-tile--benefit .nab-tile__icon svg {
+  width: 40px;
+  height: 40px;
+  fill: #000
+}
+
+@media(max-width: 767px) {
+  .nab-tile--benefit {
+    display:flex
+  }
+
+  .nab-tile--benefit .nab-tile__icon {
+    margin-right: 24px;
+    margin-bottom: 0
+  }
+}
+
+.nab-tile--list .cmp-title__heading {
+  margin: 0 0 16px
+}
+
+.nab-tile--list .cmp-title__heading .cmp-title__link {
+  color: #000
+}
+
+.nab-tile--list .cmp-title__heading .cmp-title__link:focus {
+  border-radius: 4px;
+  outline: 3px solid transparent;
+  box-shadow: 0 0 0 3px rgba(0,0,0,.65);
+  text-decoration: none
+}
+
+.nab-tile--list *+.nab-list {
+  margin-top: 16px
+}
+
+.nab-tile--list .nab-tile__content .nab-tile--description .text .nab-text {
+  margin-top: 16px;
+  margin-bottom: 16px
+}
+
+.nab-tile--list .nab-tile__content .nab-list {
+  margin-top: 16px
+}
+
+.nab-tile--list .nab-tile__content .nab-button {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -4px
+}
+
+.nab-tile,.tile {
+  height: 100%
+}
+
+.tile--white-card>.nab-tile {
+  padding: 24px;
+  background-color: #fff;
+  border: thin solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0,0,0,.32)
+}
+
+@media(min-width: 992px) {
+  .tile--white-card>.nab-tile {
+    padding:24px 32px
+  }
+}
+
+.nab-tile__content .cmp-title__heading {
+  margin-top: 0;
+  margin-bottom: 0
+}
+
+.nab-tile__content .h1 {
+  margin-bottom: 0
+}
+
+.nab-tile__content .h1:first-child {
+  margin-top: 0
+}
+
+.nab-tile *+.nab-call-to-action {
+  margin-top: 16px
+}
+
+.nab-tile__icon {
+  display: flex;
+  justify-content: center
+}
+
+.nab-tile--information {
+  display: grid;
+  grid-template: min-content 1fr/min-content 1fr;
+  gap: 8px;
+  align-items: flex-start
+}
+
+.nab-tile--information .nab-tile__icon {
+  align-items: center
+}
+
+.nab-tile--information .cmp-title__heading {
+  margin: 0
+}
+
+.nab-tile--information .nab-tile__content {
+  display: flex;
+  flex-flow: column;
+  grid-area: 2/2;
+  gap: 8px
+}
+
+.nab-tile--information .nab-text {
+  flex-grow: 1
+}
+
+.nab-tile--information .nab-call-to-action {
+  margin-top: 16px
+}
+
+.nab-tile--information .nab-call-to-action .nab-button {
+  margin: 0
+}
+
+.nab-tile--information .nab-call-to-action .action-information {
+  display: none
+}
+
+.nab-tile--information .nab-tile__actions-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center
+}
+
+.nab-tile--information .nab-tile__actions-buttons .button:first-of-type .nab-button {
+  margin-right: 16px
+}

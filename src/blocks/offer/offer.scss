@@ -1,0 +1,121 @@
+.offer-wrapper {
+  display: block;
+
+  .nab-call-to-action {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+  }
+
+  .nab-call-to-action .nab-call-to-action__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px
+  }
+
+  .nab-call-to-action .nab-call-to-action__buttons [class*=nab-button-link]:first-child {
+    margin-left: -4px
+  }
+
+  .nab-call-to-action .nab-call-to-action__action-info {
+    display: flex;
+    color: #3a4f59
+  }
+
+  .nab-call-to-action .nab-call-to-action__action-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    margin: 0 8px 0 0;
+    vertical-align: middle
+  }
+
+  .nab-button--apply .nab-button {
+    min-width: 128px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background-color: #2c853c;
+    border: 1px solid #2c853c
+  }
+
+  .nab-button--apply .nab-button:active,.nab-button--apply .nab-button:focus {
+    border-radius: 4px;
+    box-shadow: 0 0 0 3px rgba(31,95,43,.65)
+  }
+
+  .nab-button--apply .nab-button:focus {
+    outline: 3px solid transparent
+  }
+
+  .nab-button--apply .nab-button:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #1f5f2b;
+    border: 1px solid #1f5f2b
+  }
+
+  .nab-button--apply .nab-button:hover span {
+    text-decoration: underline
+  }
+
+  .nab-button--apply .nab-button:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #1f5f2b;
+    border: 1px solid #1f5f2b
+  }
+
+  .nab-button--apply .nab-button:focus span {
+    text-decoration: underline
+  }
+
+  .nab-button--apply .nab-button:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #194d23;
+    border: 1px solid #194d23
+  }
+
+  .nab-button--apply .nab-button:active span {
+    text-decoration: underline
+  }
+
+  .nab-list__item-icon {
+    display: inline-block;
+  }
+  .nab-action-info .nab-action-info__icon {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+  }
+
+  .rates-and-fees-tile__pre-text p {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .rates-and-fees__text-value {
+    margin-right: 4px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .responsivegrid .aem-Grid.aem-Grid--default--6>.aem-GridColumn.aem-GridColumn--default--3 {
+    grid-column-end: span 3;
+  }
+
+  .rates-and-fees__text-unit-period-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    vertical-align: top;
+  }
+
+}
