@@ -82,7 +82,7 @@ export default defineConfig((configEnv) => {
             },
         },
         build: {
-            sourcemap: true,
+            // sourcemap: true,
             minify: true,
             cssMinify: true,
             commonjsOptions: {
