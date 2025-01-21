@@ -1,4 +1,4 @@
-import{i as a,m as i,r as e,n,h as s,d as ma,k as va}from"../__chunks__/html.CvX0OcDZ.js";import"../__chunks__/legacy.3g3XB7ba.js";import{C as sa}from"../__chunks__/chevron-right.BIZwU9QK.js";import{h as ca}from"../__chunks__/render.BNIA9sCb.js";const pa=`<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+import{i as a,m as i,r as e,n,h as s,d as ma,k as va}from"../__chunks__/html.js";import"../__chunks__/legacy.js";import{C as sa}from"../__chunks__/chevron-right.js";import{h as ca}from"../__chunks__/render.js";const pa=`<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" d="M12 18.632l-3.997 2.192c-1.06.58-2.298-.358-2.095-1.588l.763-4.641-3.233-3.287c-.857-.871-.384-2.39.8-2.569l4.469-.677 1.998-4.222a1.419 1.419 0 012.59 0l1.998 4.222 4.469.677c1.184.18 1.657 1.698.8 2.57l-3.233 3.286.763 4.641c.203 1.23-1.036 2.169-2.095 1.588L12 18.632z"></path>
 </svg>`,ua=`<svg viewBox="0 0 24 24">
     <path fill-rule="evenodd" d="M12 19.5a7.5 7.5 0 100-15 7.5 7.5 0 000 15zm0 1.5a9 9 0 110-18 9 9 0 010 18zm3.416-7.624a.75.75 0 11-.832 1.248l-3.334-2.223V7.487a.75.75 0 111.5 0V11.6l2.666 1.777z"></path>
