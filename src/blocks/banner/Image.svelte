@@ -22,8 +22,6 @@
 <script lang="ts">
     import {onMount} from "svelte";
 
-
-
     const {breakpoints = [], pictureEl, lazy = false, preload = false, ext = 'webp'}: ImagePreloaderProps = $props();
     let sources: ImageSource[] = $state([]);
     let alt = '';
@@ -42,7 +40,7 @@
             const url = new URL(imgElSrc, window.location.href);
             const {pathname} = url;
             const pathWithoutExtension = pathname.substring(0, pathname.lastIndexOf('.'));
-            imgSrc = `${pathWithoutExtension}.${ext}?width=2048&amp;format=jpeg&amp;optimize=medium`
+            imgSrc = `${pathWithoutExtension}.${ext}?width=2048&format=webply&optimize=medium`
 
             onMount(() => {
 
