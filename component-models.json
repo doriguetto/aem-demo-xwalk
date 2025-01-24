@@ -35,7 +35,8 @@
         "component": "aem-content",
         "name": "link",
         "label": "Link"
-      },
+      }
+    ]
   },
   {
     "id": "quote",
