@@ -7,9 +7,9 @@ import type {BannerProps} from "Blocks/banner/Banner.svelte";
 export default async function decorate(block: Element) {
 
     const data: BannerProps = {
-        pictureEl: block.firstElementChild?.children[0].querySelector('picture'),
-        content: block.firstElementChild?.children[1],
-        button: block.firstElementChild?.children[2]
+        pictureEl: block.children[0].querySelector('picture'),
+        content: block.children[1].children[0],
+        button: block.children[2].children[0]
     }
     hydrate(Banner, {
         target: block,

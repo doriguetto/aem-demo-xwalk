@@ -11,7 +11,6 @@
 
     const {pictureEl, content, button}: BannerProps = $props();
     let img: ImagePreloaderProps;
-
     if (pictureEl) {
         img = {
             pictureEl,
