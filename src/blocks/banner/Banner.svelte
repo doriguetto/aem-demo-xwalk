@@ -15,6 +15,7 @@
         img = {
             pictureEl,
             preload: true,
+            ext: 'jpeg',
             breakpoints: [
                 {media: '(max-width: 768px)', width: '960'},
                 {media: '(max-width: 960px)', width: '1536'},
