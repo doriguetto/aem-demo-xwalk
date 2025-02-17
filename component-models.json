@@ -16,48 +16,6 @@
     ]
   },
   {
-    "id": "banner",
-    "fields": [
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "content",
-        "value": "",
-        "label": "Content",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      }
-    ]
-  },
-  {
-    "id": "quote",
-    "fields": [
-       {
-         "component": "richtext",
-         "name": "quote",
-         "value": "",
-         "label": "Quote",
-         "valueType": "string"
-       },
-       {
-         "component": "text",
-         "valueType": "string",
-         "name": "author",
-         "label": "Author",
-         "value": ""
-       }
-     ]
-  },
-  {
     "id": "title",
     "fields": [
       {
@@ -93,6 +51,119 @@
           {
             "name": "h6",
             "value": "h6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "text",
+    "fields": [
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "alignment",
+        "label": "Align Content",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left-aligned"
+          },
+          {
+            "name": "Center",
+            "value": "center-aligned"
+          },
+          {
+            "name": "Right",
+            "value": "right-aligned"
+          }
+        ]
+      },
+      {
+        "component": "multiselect",
+        "valueType": "string",
+        "name": "text-color",
+        "label": "Color",
+        "options": [
+          {
+            "name": "h1 black",
+            "value": "h1-black"
+          },
+          {
+            "name": "h2 black",
+            "value": "h2-black"
+          },
+          {
+            "name": "h3 black",
+            "value": "h3-black"
+          },
+          {
+            "name": "h4 black",
+            "value": "h4-black"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "text_font",
+        "label": "Font",
+        "options": [
+          {
+            "name": "Default",
+            "value": "default-font"
+          },
+          {
+            "name": "Big",
+            "value": "big-font"
+          },
+          {
+            "name": "Small",
+            "value": "small-font"
+          },
+          {
+            "name": "Thin",
+            "value": "thin-font"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "background_color",
+        "label": "Background Color",
+        "options": [
+          {
+            "name": "Default",
+            "value": "default-color"
+          },
+          {
+            "name": "Teal",
+            "value": "backgroundcolor-teal"
+          },
+          {
+            "name": "Teal Mid Light",
+            "value": "backgroundcolor-teal-mid-light"
+          }
+        ]
+      },
+      {
+        "component": "multiselect",
+        "valueType": "string",
+        "name": "miscellaneous",
+        "label": "Others",
+        "options": [
+          {
+            "name": "Bottom Border",
+            "value": "bottom-border"
+          },
+          {
+            "name": "Left padding",
+            "value": "left-padding"
+          },
+          {
+            "name": "CTA Button",
+            "value": "cta-button"
           }
         ]
       }
@@ -150,80 +221,6 @@
             "value": "highlight"
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "card",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "columns",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "columns",
-        "value": "",
-        "label": "Columns"
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "rows",
-        "value": "",
-        "label": "Rows"
-      }
-    ]
-  },
-  {
-    "id": "fragment",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
-      }
-    ]
-  },
-  {
-    "id": "hero",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
       }
     ]
   }

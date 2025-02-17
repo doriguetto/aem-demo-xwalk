@@ -4,6 +4,8 @@ import SectionWithHeadingAndLinks from './SectionWithHeadingAndLinks.svelte'
 import './section.scss'
 
 export default async function decorate(block: Element) {
+    debugger
+
     if (block.classList.contains('heading-with-links')) {
         hydrate(SectionWithHeadingAndLinks, {
             target: block,

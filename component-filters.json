@@ -15,30 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "quote",
-      "banner"
-    ]
-  },
-  {
-    "id": "cards",
-    "components": [
-      "card"
-    ]
-  },
-  {
-    "id": "columns",
-    "components": [
-      "column"
-    ]
-  },
-  {
-    "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
+      "fragment"
     ]
   }
 ]
