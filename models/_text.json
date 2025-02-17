@@ -20,11 +20,11 @@
       "id": "text",
       "fields": [
         {
-          "component": "text",
-          "valueType": "string",
-          "name": "Text",
+          "component": "richtext",
+          "name": "text",
+          "value": "",
           "label": "Text",
-          "value": ""
+          "valueType": "string"
         },
         {
           "component": "select",
