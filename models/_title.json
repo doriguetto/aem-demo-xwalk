@@ -26,6 +26,26 @@
         },
         {
           "component": "select",
+          "valueType": "string",
+          "name": "alignment",
+          "label": "Align Content",
+          "options": [
+            {
+              "name": "Left",
+              "value": "left-aligned"
+            },
+            {
+              "name": "Center",
+              "value": "center-aligned"
+            },
+            {
+              "name": "Right",
+              "value": "right-aligned"
+            }
+          ]
+        },
+        {
+          "component": "select",
           "name": "titleType",
           "label": "Title Type",
           "options": [

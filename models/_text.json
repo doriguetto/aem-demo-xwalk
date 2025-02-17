@@ -18,6 +18,13 @@
       "id": "text",
       "fields": [
         {
+          "component": "text",
+          "valueType": "string",
+          "name": "Text",
+          "label": "Text",
+          "value": ""
+        },
+        {
           "component": "select",
           "valueType": "string",
           "name": "alignment",
