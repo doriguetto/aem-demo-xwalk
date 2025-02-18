@@ -15,6 +15,9 @@
         },
         {
           "...": "./_button.json#/definitions"
+        },
+        {
+          "...": "./_test.json#/definitions"
         }
       ]
     },
@@ -33,9 +36,6 @@
       "components": [
         {
           "...": "../blocks/*/_*.json#/definitions"
-        },
-        {
-          "...": "./_test.json#/definitions"
         }
       ]
     }
