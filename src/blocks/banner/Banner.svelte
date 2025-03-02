@@ -26,7 +26,7 @@
 </script>
 
 <div class="banner-entry container responsivegrid aem-GridColumn aem-GridColumn--default--12 at-element-marker">
-
+    THIS IS A SAMPLE QA
     <div class="container">
         <div class="root responsivegrid responsivegrid--gutters-col">
 
